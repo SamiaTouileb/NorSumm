@@ -1,0 +1,7 @@
+{% extends 'index.html' %}
+{% block content %}
+<p>No more summaries to compare</p>
+<form action="{{ url_for('terminate') }}" method="post">
+  <input type="submit" name="" value="End session">
+</form>
+{% endblock %}
