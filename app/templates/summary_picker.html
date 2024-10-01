@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div>
+  <h1>Article</h1>
+  <p>{{ article }}</p>
+  <h2>Summary 1</h2>
+  <p>{{ summary_1 }}</p>
+  <!--<h2>Summary 2</h2>-->
+  <!--<p>{{ summary_2 }}</p>-->
+</div>
+
+<div>
+  <form action="{{ url_for('select') }}" method="post">
+    <input type="radio" id="summary1" name="selected_summary" value="1">
+    <label for="summary1">Summary 1</label><br>
+    <input type="radio" id="summary2" name="selected_summary" value="2">
+    <label for="summary2">Summary 2</label>
+    <input type="submit" name="" value="Submit">
+  </form>
+</div>
+{% endblock %}
