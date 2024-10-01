@@ -4,19 +4,26 @@
 <div>
   <h1>Article</h1>
   <p>{{ article }}</p>
-  <h2>Summary 1</h2>
-  <p>{{ summary_1 }}</p>
-  <!--<h2>Summary 2</h2>-->
-  <!--<p>{{ summary_2 }}</p>-->
+  <h2>Summary 1: {{ summary_1["type"] }}</h2>
+  <p>{{ summary_1['summary'] }}</p>
+  <h2>Summary 2: {{ summary_2["type"] }}</h2>
+  <p>{{ summary_2['summary'] }}</p>
 </div>
 
 <div>
   <form action="{{ url_for('select') }}" method="post">
-    <input type="radio" id="summary1" name="selected_summary" value="1">
+    <input type="hidden" name="article_id" value="{{ article_id }}">
+    <input type="hidden" name="summary1" value="{{ summary_1['id'] }} {{summary_1['type']}}">
+    <input type="hidden" name="summary2" value="{{ summary_2['id'] }} {{summary_2['type']}}">
+    <input type="radio" id="summary1" name="preferred_type" value="{{summary_1['type']}}">
     <label for="summary1">Summary 1</label><br>
-    <input type="radio" id="summary2" name="selected_summary" value="2">
+    <input type="radio" id="summary2" name="preferred_type" value="{{ summary_2['type']}}">
     <label for="summary2">Summary 2</label>
     <input type="submit" name="" value="Submit">
+  </form>
+
+  <form action="{{ url_for('terminate') }}" method="post">
+    <input type="submit" name="" value="End session">
   </form>
 </div>
 {% endblock %}
