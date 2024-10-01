@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
 {% block content %}
-
-<p>Welcome</p>
-
+<form action="{{ url_for('start_session') }}" method="post">
+  <input type="submit" name="" value="Start">
+</form>
 {% endblock %}
