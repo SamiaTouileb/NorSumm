@@ -135,5 +135,29 @@ def terminate():
     return redirect(url_for("index"))
 
 
+@app.route("/admin", methods=["GET", "POST"])
+def admin_login():
+    # TODO: add proper login
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+        print(username, password)
+        if username == "test" and password == "test":
+            session["admin_usr"] = username
+            return redirect(url_for("admin_panel"))
+        else:
+            return redirect(url_for("admin"))
+    else:
+        return render_template("admin_login.html")
+
+
+@app.route("/admin_panel", methods=["GET"])
+def admin_panel():
+    if not session.get("admin_usr"):
+        return redirect(url_for("admin_login"))
+    else:
+        return summary_preferences
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
