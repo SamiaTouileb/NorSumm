@@ -1,8 +1,8 @@
 import json
 import secrets
-import sqlite3
 from random import randint, shuffle
 
+from db_funcs import create_database, get_credentials, summary_db, get_all
 from flask import Flask, redirect, render_template, request, session, url_for
 
 DATABASE = "./database.db"
@@ -21,29 +21,6 @@ summary_preferences = {}
 app = Flask(__name__)
 
 app.secret_key = secrets.token_hex()
-
-
-def create_database():
-    with sqlite3.connect(DATABASE) as db:
-        c = db.cursor()
-        c.execute(
-            """CREATE TABLE IF NOT EXISTS admins
-                    (_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    username TEXT NOT NULL UNIQUE,
-                     password TEXT NOT NULL);"""
-        )
-        try:
-            c.execute(
-                """
-            INSERT INTO admins (username, password)
-            VALUES (?, ?)
-            """,
-                # Not good practice, but works for this usecase
-                ("norsum_admin", "norsum1234"),
-            )
-        except sqlite3.IntegrityError:
-            pass
-        db.commit()
 
 
 def update_summary_preferences(article_id, written_id, generated_id, preference_type):
@@ -96,6 +73,7 @@ def extract_data(idx, article_set_written, article_set_generated: list, form="nb
 
 @app.route("/", methods=["GET"])
 def index():
+    get_all(DATABASE)
     return render_template("welcome.html")
 
 
@@ -142,15 +120,19 @@ def select():
     preferred = request.form["preferred_type"]
     if sum1_type == preferred:
         if preferred == "written":
+            summary_db(DATABASE, article_id, sum1_id, preferred)
             update_summary_preferences(article_id, sum1_id, sum2_id, preferred)
         elif preferred == "generated":
+            summary_db(DATABASE, article_id, sum2_id, preferred)
             update_summary_preferences(article_id, sum2_id, sum1_id, preferred)
     elif sum2_type == preferred:
         if preferred == "written":
+            summary_db(DATABASE, article_id, sum2_id, preferred)
             update_summary_preferences(article_id, sum2_id, sum1_id, preferred)
         elif preferred == "generated":
+            summary_db(DATABASE, article_id, sum1_id, preferred)
             update_summary_preferences(article_id, sum1_id, sum2_id, preferred)
-    print(summary_preferences)
+    # print(summary_preferences)
     session["current_article"] += 1
     return redirect("/summaries")
 
@@ -167,16 +149,7 @@ def admin_login():
         username = request.form["username"]
         password = request.form["password"]
 
-        with sqlite3.connect(DATABASE) as db:
-            db.row_factory = sqlite3.Row
-            c = db.cursor()
-            c.execute(
-                f"""
-            SELECT username, password FROM admins
-            WHERE username='{username}'
-            """
-            )
-            creds = c.fetchone()
+        creds = get_credentials(DATABASE, username)
 
         if not creds:
             return redirect(url_for("admin_login"))
@@ -198,5 +171,5 @@ def admin_panel():
 
 
 if __name__ == "__main__":
-    create_database()
+    create_database(DATABASE)
     app.run(host="0.0.0.0", port=5000, debug=True)
