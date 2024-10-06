@@ -1,8 +1,11 @@
 import json
 import secrets
+import sqlite3
 from random import randint, shuffle
 
 from flask import Flask, redirect, render_template, request, session, url_for
+
+DATABASE = "./database.db"
 
 with open("./Data/NorSumm_dev.json", "r") as f:
     data = json.load(f)
@@ -18,6 +21,29 @@ summary_preferences = {}
 app = Flask(__name__)
 
 app.secret_key = secrets.token_hex()
+
+
+def create_database():
+    with sqlite3.connect(DATABASE) as db:
+        c = db.cursor()
+        c.execute(
+            """CREATE TABLE IF NOT EXISTS admins
+                    (_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    username TEXT NOT NULL UNIQUE,
+                     password TEXT NOT NULL);"""
+        )
+        try:
+            c.execute(
+                """
+            INSERT INTO admins (username, password)
+            VALUES (?, ?)
+            """,
+                # Not good practice, but works for this usecase
+                ("norsum_admin", "norsum1234"),
+            )
+        except sqlite3.IntegrityError:
+            pass
+        db.commit()
 
 
 def update_summary_preferences(article_id, written_id, generated_id, preference_type):
@@ -137,16 +163,28 @@ def terminate():
 
 @app.route("/admin", methods=["GET", "POST"])
 def admin_login():
-    # TODO: add proper login
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
-        print(username, password)
-        if username == "test" and password == "test":
+
+        with sqlite3.connect(DATABASE) as db:
+            db.row_factory = sqlite3.Row
+            c = db.cursor()
+            c.execute(
+                f"""
+            SELECT username, password FROM admins
+            WHERE username='{username}'
+            """
+            )
+            creds = c.fetchone()
+
+        if not creds:
+            return redirect(url_for("admin_login"))
+        elif username == creds["username"] and password == creds["password"]:
             session["admin_usr"] = username
             return redirect(url_for("admin_panel"))
         else:
-            return redirect(url_for("admin"))
+            return redirect(url_for("admin_login"))
     else:
         return render_template("admin_login.html")
 
@@ -160,4 +198,5 @@ def admin_panel():
 
 
 if __name__ == "__main__":
+    create_database()
     app.run(host="0.0.0.0", port=5000, debug=True)
