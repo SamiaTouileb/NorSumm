@@ -2,7 +2,12 @@ import json
 import secrets
 from random import randint, shuffle
 
-from db_funcs import create_database, get_credentials, summary_db, get_all
+from db_funcs import (
+    create_database,
+    fetch_summaries_json,
+    get_credentials,
+    summary_db,
+)
 from flask import Flask, redirect, render_template, request, session, url_for
 
 DATABASE = "./database.db"
@@ -73,7 +78,6 @@ def extract_data(idx, article_set_written, article_set_generated: list, form="nb
 
 @app.route("/", methods=["GET"])
 def index():
-    get_all(DATABASE)
     return render_template("welcome.html")
 
 
@@ -132,7 +136,6 @@ def select():
         elif preferred == "generated":
             summary_db(DATABASE, article_id, sum1_id, preferred)
             update_summary_preferences(article_id, sum1_id, sum2_id, preferred)
-    # print(summary_preferences)
     session["current_article"] += 1
     return redirect("/summaries")
 
@@ -167,7 +170,7 @@ def admin_panel():
     if not session.get("admin_usr"):
         return redirect(url_for("admin_login"))
     else:
-        return summary_preferences
+        return fetch_summaries_json(DATABASE)
 
 
 if __name__ == "__main__":

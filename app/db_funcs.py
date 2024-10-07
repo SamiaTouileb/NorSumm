@@ -1,3 +1,4 @@
+import collections.abc
 import sqlite3
 
 
@@ -13,7 +14,7 @@ def create_database(database):
         c.execute(
             """
         CREATE TABLE IF NOT EXISTS summaries
-        (article_id TEXT NOT NULL UNIQUE,
+        (article_id TEXT NOT NULL,
         summary_type TEXT NOT NULL,
         summary_id TEXT NOT NULL,
         preference_count INT,
@@ -48,16 +49,34 @@ def get_credentials(database, username):
     return creds
 
 
-def get_all(database):
+def _update(d, u):
+    for k, v in u.items():
+        if isinstance(v, collections.abc.Mapping):
+            d[k] = _update(d.get(k, {}), v)
+        else:
+            d[k] = v
+    return d
+
+
+def fetch_summaries_json(database):
     with sqlite3.connect(database) as db:
         db.row_factory = sqlite3.Row
         c = db.cursor()
         c.execute("""SELECT * from summaries""")
         out = c.fetchall()
-    for row in out:
-        for k, v in dict(row).items():
-            print(k, v)
-        print()
+
+    out_json = {}
+    for summ in out:
+        out_json = _update(
+            out_json,
+            {
+                summ["article_id"]: {
+                    summ["summary_type"]: {summ["summary_id"]: summ["preference_count"]}
+                }
+            },
+        )
+
+    return out_json
 
 
 def summary_db(database, article_id, summary_id, preference_type):
@@ -69,7 +88,7 @@ def summary_db(database, article_id, summary_id, preference_type):
         WHERE article_id='{article_id}' AND summary_type = '{preference_type}' AND summary_id = '{summary_id}';
         """
 
-        insert_statement = f"""
+        insert_statement = """
         INSERT INTO summaries (article_id, summary_type, summary_id, preference_count)
         VALUES (?, ?, ?, ?)
         """
@@ -89,6 +108,3 @@ def summary_db(database, article_id, summary_id, preference_type):
             WHERE article_id='{article_id}' AND summary_type = '{preference_type}' AND summary_id = '{summary_id}';
             """
             c.execute(update_statement)
-            print(out)
-            for key, value in dict(out).items():
-                print(key, value)
