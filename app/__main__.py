@@ -2,12 +2,7 @@ import json
 import secrets
 from random import randint, shuffle
 
-from db_funcs import (
-    create_database,
-    fetch_summaries_json,
-    get_credentials,
-    summary_db,
-)
+from db_funcs import create_database, fetch_summaries_json, get_credentials, summary_db
 from flask import Flask, redirect, render_template, request, session, url_for
 
 DATABASE = "./database.db"
@@ -21,29 +16,10 @@ data_generert = data[:3]  # TODO: Replace with generated data
 shuffle(data_generert)
 
 N_ARTICLES = len(data_skrevet)
-summary_preferences = {}
 
 app = Flask(__name__)
 
 app.secret_key = secrets.token_hex()
-
-
-def update_summary_preferences(article_id, written_id, generated_id, preference_type):
-    if article_id not in summary_preferences.keys():
-        summary_preferences.update({article_id: {"written": {}, "generated": {}}})
-
-    if written_id not in summary_preferences[article_id]["written"].keys():
-        summary_preferences[article_id]["written"].update({written_id: 0})
-
-    if generated_id not in summary_preferences[article_id]["generated"].keys():
-        summary_preferences[article_id]["generated"].update({generated_id: 0})
-
-    if preference_type == "written":
-        summary_preferences[article_id]["written"][written_id] += 1
-    elif preference_type == "generated":
-        summary_preferences[article_id]["generated"][generated_id] += 1
-    else:
-        raise ValueError(f"'{preference_type}', is not a valid preference_type")
 
 
 def find_article(articles, id):
@@ -125,17 +101,13 @@ def select():
     if sum1_type == preferred:
         if preferred == "written":
             summary_db(DATABASE, article_id, sum1_id, preferred)
-            update_summary_preferences(article_id, sum1_id, sum2_id, preferred)
         elif preferred == "generated":
             summary_db(DATABASE, article_id, sum2_id, preferred)
-            update_summary_preferences(article_id, sum2_id, sum1_id, preferred)
     elif sum2_type == preferred:
         if preferred == "written":
             summary_db(DATABASE, article_id, sum2_id, preferred)
-            update_summary_preferences(article_id, sum2_id, sum1_id, preferred)
         elif preferred == "generated":
             summary_db(DATABASE, article_id, sum1_id, preferred)
-            update_summary_preferences(article_id, sum1_id, sum2_id, preferred)
     session["current_article"] += 1
     return redirect("/summaries")
 
