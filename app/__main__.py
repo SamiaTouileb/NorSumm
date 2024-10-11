@@ -8,14 +8,16 @@ from flask import Flask, redirect, render_template, request, session, url_for
 DATABASE = "./database.db"
 
 with open("./Data/NorSumm_dev.json", "r") as f:
-    data = json.load(f)
+    data_written = json.load(f)
+
+with open("./Data/generated_summs.json", "r") as f:
+    data_generated = json.load(f)
 
 # TODO: Shuffle data for each session
-data_skrevet = data[:3]
-data_generert = data[:3]  # TODO: Replace with generated data
-shuffle(data_generert)
+data_written = data_written[:]
+data_generated = data_generated[:]
 
-N_ARTICLES = len(data_skrevet)
+N_ARTICLES = len(data_written)
 
 app = Flask(__name__)
 
@@ -24,23 +26,33 @@ app.secret_key = secrets.token_hex()
 
 def find_article(articles, id):
     for i, dictionary in enumerate(articles):
-        if dictionary["id"] == id:
+        # if dictionary["id"] == id:
+        if dictionary["article"] == id:
             return i
     raise LookupError(f"The article of id: {id}, was not found.")
 
 
 def extract_data(idx, article_set_written, article_set_generated: list, form="nb"):
+    # TODO: use article id to match written and generated summaries
     written = article_set_written[idx]
-    generated_idx = find_article(article_set_generated, written["id"])
+    # generated_idx = find_article(article_set_generated, written["id"])
+    generated_idx = find_article(article_set_generated, written["article"])
 
     summary_written_idx = randint(1, 3)
     summary_generated_idx = randint(1, 3)
     summary_written = article_set_written[idx][f"summaries_{form}"][
         summary_written_idx - 1
     ][f"summary{summary_written_idx}"]
-    summary_generated = article_set_generated[generated_idx][f"summaries_{form}"][
+    # summary_generated = article_set_generated[generated_idx][f"summaries_{form}"][
+    summary_generated = article_set_generated[generated_idx]["summaries"][
         summary_generated_idx - 1
     ][f"summary{summary_generated_idx}"]
+    model_generated = article_set_generated[generated_idx]["summaries"][
+        summary_generated_idx - 1
+    ]["model"]
+    prompt_generated = article_set_generated[generated_idx]["summaries"][
+        summary_generated_idx - 1
+    ]["prompt"]
 
     return {
         "id": written["id"],
@@ -49,6 +61,8 @@ def extract_data(idx, article_set_written, article_set_generated: list, form="nb
         "summary_written": summary_written,
         "summary_generated_id": f"summary{summary_generated_idx}",
         "summary_generated": summary_generated,
+        "summary_generated_model": model_generated,
+        "summary_generated_prompt": prompt_generated,
     }
 
 
@@ -71,7 +85,6 @@ def select_age():
     else:
         age_group = request.form["age_group"]
         session["age_group"] = age_group
-        print(session["age_group"])
         return redirect(url_for("summary_picker"))
 
 
@@ -80,17 +93,21 @@ def summary_picker():
     if session["current_article"] == N_ARTICLES:
         return render_template("no_more_summaries.html")
 
-    article = extract_data(session["current_article"], data_skrevet, data_generert)
+    article = extract_data(session["current_article"], data_written, data_generated)
     summaries = [
         {
             "id": article["summary_written_id"],
             "summary": article["summary_written"],
             "type": "written",
+            "model": None,
+            "prompt": None,
         },
         {
             "id": article["summary_generated_id"],
             "summary": article["summary_generated"],
             "type": "generated",
+            "model": article["summary_generated_model"],
+            "prompt": article["summary_generated_prompt"],
         },
     ]
     shuffle(summaries)
@@ -106,19 +123,15 @@ def summary_picker():
 @app.route("/select", methods=["POST"])
 def select():
     article_id = request.form["article_id"]
-    sum1_id, sum1_type = request.form["summary1"].split(" ")
-    sum2_id, sum2_type = request.form["summary2"].split(" ")
+
+    keys = ["id", "type", "model", "prompt"]
+    sum1 = {k: v for (k, v) in zip(keys, request.form["summary1"].split("<split>"))}
+    sum2 = {k: v for (k, v) in zip(keys, request.form["summary2"].split("<split>"))}
     preferred = request.form["preferred_type"]
-    if sum1_type == preferred:
-        if preferred == "written":
-            summary_db(DATABASE, article_id, sum1_id, preferred)
-        elif preferred == "generated":
-            summary_db(DATABASE, article_id, sum2_id, preferred)
-    elif sum2_type == preferred:
-        if preferred == "written":
-            summary_db(DATABASE, article_id, sum2_id, preferred)
-        elif preferred == "generated":
-            summary_db(DATABASE, article_id, sum1_id, preferred)
+    if sum1["type"] == preferred:
+        summary_db(DATABASE, article_id, preferred, sum1, session["age_group"])
+    elif sum2["type"] == preferred:
+        summary_db(DATABASE, article_id, preferred, sum2, session["age_group"])
     session["current_article"] += 1
     return redirect("/summaries")
 
