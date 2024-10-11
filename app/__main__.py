@@ -61,7 +61,18 @@ def index():
 def start_session():
     print("Starting user session")
     session["current_article"] = 0
-    return redirect(url_for("summary_picker"))
+    return redirect(url_for("select_age"))
+
+
+@app.route("/age", methods=["GET", "POST"])
+def select_age():
+    if request.method == "GET":
+        return render_template("select_age.html")
+    else:
+        age_group = request.form["age_group"]
+        session["age_group"] = age_group
+        print(session["age_group"])
+        return redirect(url_for("summary_picker"))
 
 
 @app.route("/summaries", methods=["GET"])
