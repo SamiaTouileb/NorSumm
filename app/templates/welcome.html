@@ -1,12 +1,21 @@
 {% extends 'index.html' %}
 {% block content %}
-<div class="container text-center">
+<div class="container">
   <h1>NorSumm</h1>
-  <p>
-    Velg en av oppsummeringene.
-    Deretter trykk neste for å gå videre.
-    Trykk avslutt for å avslutte økten.
-  </p>
+  <p>Takk for at du hjelper oss med denne oppgaven!</p>
+
+  <p>Du vil bli presentert én nyhetsartikkel om gangen, som vi ønsker at du skal lese. Under hver nyhetsartikkel vil du bli presentert to sammendrag. Les dem nøye og velg det sammendraget du foretrekker etter følgende kriterier:</p>
+
+  <ul>
+    <li>Relevans: utvalget av viktig innhold fra nyhetsartikkelen (kilden).</li>
+    <li>Konsistens: samsvar mellom sammendraget og kilden som blir oppsummert. Et konsistent sammendrag inneholder kun faktiske (faktuelle) uttalelser som kan utledes fra kildedokumentet.</li>
+    <li>Flyt: kvaliteten på individuelle setninger. Setningene i sammendraget skal ikke ha formateringsproblemer, typografiske feil eller ugrammatiske konstruksjoner som gjør teksten vanskelig/unaturlig å lese.</li>
+  </ul>
+
+
+  <p>Disse skal tas hensyn til med følgende prioritering: relevans > konsistens > flyt. Slik at relevans er viktigere enn konsistens, som igjen er viktigere enn flyt.</p>
+
+  <p>Takk igjen for at du hjelper oss!</p>
   <form action="{{ url_for('start_session') }}" method="post">
     <input type="submit" name="" value="Start" class="btn btn-primary">
   </form>
