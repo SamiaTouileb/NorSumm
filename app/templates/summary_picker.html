@@ -20,8 +20,8 @@
   </div>
     <form action="{{ url_for('select') }}" method="post" class="row">
       <input type="hidden" name="article_id" value="{{ article_id }}">
-      <input type="hidden" name="summary1" value="{{ summary_1['id'] }} {{summary_1['type']}}">
-      <input type="hidden" name="summary2" value="{{ summary_2['id'] }} {{summary_2['type']}}">
+      <input type="hidden" name="summary1" value="{{ summary_1['id'] }}<split>{{summary_1['type']}}<split>{{ summary_1['model'] }}<split>{{ summary_1['prompt'] }}">
+      <input type="hidden" name="summary2" value="{{ summary_2['id'] }}<split>{{summary_2['type']}}<split>{{ summary_2['model'] }}<split>{{ summary_2['prompt'] }}">
       <div class="col">
         <div class="form-check">
           <input type="radio" id="summary1" name="preferred_type" value="{{summary_1['type']}}" class="form-check-input"required>
