@@ -5,17 +5,14 @@ import pandas as pd
 
 def parse_predictions(path_to_predictions: str):
     preds = pd.read_csv(path_to_predictions, sep="\t")
-    preds = preds.groupby("article", as_index=False).agg(lambda x: list(x))
+    preds = preds.groupby("id", as_index=False).agg(lambda x: list(x))
     parsed_preds = []
     for _, row in preds.iterrows():
         models = row["model"]
-        article = row["article"]
         prompts = row["prompt"]
         predictions = row["predictions"]
         out_dict = {
-            # TODO: use id instead
-            "id": "not_implemented",  # row["id"]
-            "article": article,
+            "id": row["id"],
             "summaries": [
                 {f"summary{i+1}": prediction, "model": model, "prompt": prompt}
                 for i, (prediction, model, prompt) in enumerate(

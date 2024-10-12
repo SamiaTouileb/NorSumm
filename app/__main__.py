@@ -26,24 +26,20 @@ app.secret_key = secrets.token_hex()
 
 def find_article(articles, id):
     for i, dictionary in enumerate(articles):
-        # if dictionary["id"] == id:
-        if dictionary["article"] == id:
+        if dictionary["id"] == id:
             return i
     raise LookupError(f"The article of id: {id}, was not found.")
 
 
 def extract_data(idx, article_set_written, article_set_generated: list, form="nb"):
-    # TODO: use article id to match written and generated summaries
     written = article_set_written[idx]
-    # generated_idx = find_article(article_set_generated, written["id"])
-    generated_idx = find_article(article_set_generated, written["article"])
+    generated_idx = find_article(article_set_generated, written["id"])
 
     summary_written_idx = randint(1, 3)
     summary_generated_idx = randint(1, 3)
     summary_written = article_set_written[idx][f"summaries_{form}"][
         summary_written_idx - 1
     ][f"summary{summary_written_idx}"]
-    # summary_generated = article_set_generated[generated_idx][f"summaries_{form}"][
     summary_generated = article_set_generated[generated_idx]["summaries"][
         summary_generated_idx - 1
     ][f"summary{summary_generated_idx}"]
