@@ -1,0 +1,602 @@
+[
+  {
+    "id": "ap~20050210-762251.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: Pinefull død for den irske pub? Irene diskuterer over mørkebrunt øl. Micheál Martin er på alles lepper. Helseministeren innfører totalt røykeforbud på pubene i morgen. Mange spår slutten for publivet. Vi skyver opp døren til Mulligan's pub. - Alle vet hvor Mulligan's er, har omkvedet vært på pubene i Dublin. - Bare gå etter lukten, du kjenner røyken lang vei. Atmosfæren omfavner oss idet vi åpner døren. Lukten av Irish stew, grovt brød, blandet med tyktflytende brunsvart øl, rennende nedover glasset og utover bardisken. Vått tøy som tørker langsomt. Og røyk. Masse røyk. Inne på puben snakkes det dempet ved de små bordene. En ung mann prøver å gjøre inntrykk på kveldens utkårede. Foran TV-skjermen følger de fotballinteresserte Manchester Uniteds bitre ferd mot undergangen i europacupen. I baren tappes det ustanselig mørkebrun Guinness. Sjelen finner hvile når man setter seg ned ved den generøse bardisken på Mulligan's. Hvorfor skulle vi egentlig noensinne forlate dette stedet? Men vi er en nykommere på Mulligan's",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Irland er det første land i Europa som innfører en så drastisk lovgivning. Røykeforbudet vil føre til masse bråk ute på gatene, der folk vil stå og røyke. Dessuten vil gjestene bli aggressive og sure.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20081210-1411542.txt",
+    "summaries": [
+      {
+        "summary1": "Museumsparadokser | Verdensarv. Aldri har så mye fortid og samtid vært ivaretatt på museer. Selve vår sivilisasjon er blitt det museet vi bor i. Hvorfor preges vi da av historieløshet? Jeg skal ikke kaste meg inn i norsk museumsdebatt, den lever fint her i avisen uten meg. Men når det nå sies at museene må fornye seg, stusser jeg litt. Må de virkelig dét? Jeg synes de er ganske nye, alle sammen, tidligst fra 1500-tallet. Før den tid fantes ikke ett museum i verden. Først på 1800-tallet ble museer vanlige foreteelser. Jeg synes dessuten at et skikkelig museum skal være litt kjedelig. Det er pussig med museer. Jeg har ikke tall på hvor mange jeg har besøkt, men det er bare en håndfull utstilte gjenstander jeg husker. Jeg har sett tusen potteskår. Jeg husker ikke ett. Allikevel fortsetter jeg å gå i museer. Ganske hastig gjennom flere av salene. Ofte er museumsbygningen interessant i seg selv, alltid finner jeg noe minneverdig, alltid har jeg glede av å komme ut igjen. Da befinner jeg meg fortsatt i et museum, synes jeg, i et bymiljø som også er ivaretatt, mer eller mindre",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Museumsparadokser",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Museumsparadokser",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20081210-1546270.txt",
+    "summaries": [
+      {
+        "summary1": "Borat sårer nasjonens stolthet | Ville protestere. En «norsk» reaksjon. Et rikt land. Sacha Baron Cohen har fått adrenalinet til å flomme i Kasakhstan. Hadde det vært annerledes i Norge, hvis filmen om Borat hadde gjort narr av budeier og hardingfele? Melonas kan spøke med norske bunader. Kanskje ville ikke utenlandske komikere blitt like godt mottatt. - Et svin av en mann, sa Kasakhstans London-ambassadør om Borat. Eller var det Sacha Baron Cohen han siktet til? Det gjør kanskje ingen forskjell. For i Kasakhstan er harmen stor. Folk skjønner at de blir ledd av ute i den store verden, men begriper ikke helt hvorfor. Denne mangelen på forståelse gjelder ikke bare kasakhstanere som aldri har satt sine ben utenfor det «primitive» Sentral-Asia. Ukemagasinet Der Spiegel inviterte tre studenter fra Kasakhstan til å se filmen om Borat i Hamburg. Alle hadde bodd flere år i Tyskland. - Et kinobesøk som utviklet seg til tortur, heter det i reportasjen. Mens folk i salen mistet pusten av latter, satt kasakhstanerne «rette i ryggen og så vantro på at landet deres ble revet i filler»",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20081210-1564010.txt",
+    "summaries": [
+      {
+        "summary1": "Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som har et problem. Det er ikke bare Ap som",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Svak tenkning",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Svak tenkning",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20081210-1775472.txt",
+    "summaries": [
+      {
+        "summary1": "Tvisynt ombudsmann | Stappfulle esker. Forsvarsskrift. Ombudsmannen | Borten-biografi. Det blir for snevert når Harald Berntsen bruker tittelen «Staurberaren» på den første store biografien om tidligere statsminister Per Borten. Ingen av Per Bortens uttalelser gjennom mer enn 50 år som lokalpolitiker, stortingsrepresentant, statsminister og politisk kårkall er blitt så legendarisk som da han ved avskjeden som statsminister i 1971 sammenlignet det å lede en koalisjonsregjering med å bære sprikende staur. Men uttalelsen passet bedre på situasjonen enn på personen som kom med den. Per Borten ble valgt som statsminister etter den borgerlige valgseieren i 1965 fordi flertallet i Høyres stortingsgruppe mente at han kunne bli den mest samlende regjeringssjefen. Det varte bare noen få år. Da Regjeringen gikk i gradvis indre oppløsning etter den nye valgseieren i 1969, var statsministerens uforutsigbare og ustrukturerte arbeidsstil en del av forklaringen, men langt fra hele. Den altoverskyggende årsak var at de politiske motsetningene mellom regjeringspartiene, først og fremst i EF-saken, tæret så hardt på tillitsforholdet partiene imellom at samarbeidet",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Tvisynt ombudsmann | Stappfulle esker. Forsvarsskrift. Ombudsmannen | Borten-biografi. Det blir for snevert når Harald Berntsen bruker tittelen «Staurberaren» på den første store biografien om tidligere statsminister Per Borten. Ingen av Per Bortens uttalelser gjennom mer enn 50 år som lokalpolitiker, stortingsrepresentant, statsminister og politisk kårkall er blitt så legendarisk som da han ved avskjeden som statsminister i 1971 sammenlignet det å lede en koalisjonsregjering med å bære sprikende staur. Men uttalelsen passet bedre på situasjonen enn på personen som kom med den. Per Borten ble valgt som statsminister etter den borgerlige valgseieren i 1965 fordi flertallet i Høyres stortingsgruppe mente at han kunne bli den mest samlende regjeringssjefen. Det varte bare noen få år. Da Regjeringen gikk i gradvis indre oppløsning etter den nye valgseieren i 1969, var statsministerens uforutsigbare og ustrukturerte arbeidsstil en del av forklaringen, men langt fra hele. Den altoverskyggende årsak var at de politiske motsetningene mellom regjeringspartiene, først og fremst i EF-saken, tæret så hardt på tillitsforholdet partiene imellom at samarbeidet ikke lenger",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20090401-3010501.txt",
+    "summaries": [
+      {
+        "summary1": "NATO har fått to nye medlemsland | - Har jobbet hardt | Albania først | Albania og Kroatia ble onsdag formelt ønsket velkommen som NATOs 27. og 28. medlemsland.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "NATO har fått to nye medlemsland | - Har jobbet hardt | Albania først | Albania og Kroatia ble onsdag formelt ønsket velkommen som NATOs 27. og 28. medlemsland. Folk i Albania er stolte over NATO-medlemskapet. Her i Tirana er det hengt opp et en banner der det står «Albania i NATO». Foto: Reuters | Det bekreftet USAs utenriksdepartement etter møter med landenes ambassadører i Washington onsdag. - Vi er innstilt på å ta vår andel av ansvaret for global fred og stabilitet i steder som Afghanistan, men også i andre deler av verden, sa Kroatias ambassadør Kolinda Grabar-Kitarovic under seremonien. Den albanske ambassador Aleksander Sallabanda fulgte opp | - Som NATO-medlemsland er Albania beredt til å ta opp alle utfordringer og ansvar som deltakelsen i alliansen krever, sa han. Både Albania og Kroatia bidrar allerede til den NATO-ledede ISAF-styrken i Afghanistan. I Brussel blir bekreftelsen fra USA om at alle NATOs medlemsland formelt har godkjent de nye medlemslandene, tatt godt imot. - Dette er veldig velkomne nyheter. Albania og Kroatia har jobbet veldig hardt med å møte alliansens",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "NATO har fått to nye medlemsland",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20090803-3199497.txt",
+    "summaries": [
+      {
+        "summary1": "Den unevnelige plan B | Uansvarlig. Regjeringspartnerne. Revehi. Regjeringsspill.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Den unevnelige plan B",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20090805-3202217.txt",
+    "summaries": [
+      {
+        "summary1": "Hillary Clinton har vært i Nord-Korea og fått løslatt to fengslede journalister. Hun har også snakket med sin ektemann, ekspresidenten, som for øyeblikket er om bord i privatjetflyet sitt sammen med journalistene, på vei til Los Angeles, slik at de to journalistene kan bli gjenforent med familiene sine med en gang.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Her går de to journalistene om bord i Clintons fly",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Her går de to journalistene om bord i Clintons fly | Spiste middag på Kim Jong-il | Arrestert for ulovlig grensekryssing | Sa han unnskyld? Nord-Korea fornærmet Hillary Clinton | Eks-presidenten brukte under ett døgn for å få journalistene benådet fra 12 år i nordkoreansk arbeidsleir. Kona sendte Clinton til Nord-Korea | Fangene slippes fri | Journalister som forhandlingskort | Familiene ber om nåde for amerikanske journalister | Tirsdag morgen landet tidligere president Bill Clinton i Nord-Koreas hovedstad Pyongyang med ett mål for øyet: å få frigitt de to amerikanske journalistene Euna Lee og Laura Ling, som ble fengslet i kommunistlandet 17. mars i år, og i juni dømt til tolv års straffarbeid i en arbeidsleir. 20 timer senere gikk Clinton og de to journalistene om bord i eks-presidentens privatfly, på vei hjem til USA. Clinton ble mottatt med blomster og vennlige håndtrykk da han landet, og dro så i et møte med den nordkoreanske lederen, Kim Jong-il. Ifølge CNN varte møtet i én time og ett kvarter, før den tidligere presidenten og hans to medarbeidere spiste en to",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20090825-3233467.txt",
+    "summaries": [
+      {
+        "summary1": "Jubilant i spagat | Høy pris. Mistet initiativet | Støtte fra velgerne. Høyre. Flertallet av Høyre-velgerne mener deres parti kan danne regjering med Frp. Skjer det, blir jubileumsåret en korsvei i Høyres historie. 125-årsdagen i dag må være en blandet følelse for Høyre. Norges nesteldste parti har mye å være stolt av fra de beste periodene i sin historie. I tider da Høyre maktet å overføre honnørordene valgfrihet, mangfold og ansvarlighet til en praktisk politikk som folk flest opplevde som forbedringer i egen hverdag, var partiet samfunnsledende. Sist og tydeligst skjedde det under Kåre Willochs regjering på 1980-tallet, da NRK-monopolet ble opphevet, butikkenes åpningstider utvidet og boligmarkedet sluppet fri på en måte som avskaffet uskikken at folk altfor ofte måtte betale penger under bordet for å få kjøpt bolig. Men dagens jubileum feires i en vanskelig situasjon for Høyre. Tre uker før stortingsvalget viser meningsmålingene at partiet risikerer å få sitt dårligste resultat siden starten i 1884. Det er ille nok i seg selv. Enda verre er det at Høyre er i ferd med å miste sin posisjon som den toneangivende stemme på såkalt borgerlige",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Høyre har mye å være stolt av i sin historie. Men partiet har også mye å være skamfull over.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20090905-3252356.txt",
+    "summaries": [
+      {
+        "summary1": "Et klarere Høyre | Luftslott. Skjerpet tone | Handlingsrom. Både Siv Jensen og Høyres velgere hjelper Erna Solberg til å bli tydeligere i regjeringsspørsmålet.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Erna Solberg er en ryddig politiker. Når hun først har sagt, slik hun gjorde på Høyres landsmøte i vår, at Høyre kan regjere både med Fremskrittspartiet og med Kristelig Folkeparti og Venstre, kommer hun til å holde fast på det gjennom hele valgkampen. Det betyr ikke at begge regjeringsalternativene er likestilte i Høyre-lederens hode og strategi. Utviklingen i valgkampen, både internt i Høyre og i forholdet mellom de fire opposisjonspartiene, bidrar til at en gjenoppstandelse av Bondevik-koalisjonen, denne gangen med Erna Solberg som statsminister, seiler frem som det minst urealistiske regjeringsalternativet på ikke-sosialistisk side. Høyres drøm om en flertallsregjering av alle fire partiene er forlengst lagt til side. Nå har til og med det store flertallet av Høyres egne velgere innsett hvilket luftslott en slik regjering har vært hele tiden. Fortsatt sier riktignok hver fjerde Høyre-velger at han foretrekker en regjering av Frp og Høyre. Men i praksis er en slik konstellasjon bare tenkelig hvis de to partiene får flertall. Ingenting tyder på at det er innen rekkevidde. Høyre, KrF og Venstre vil derimot kunne danne en mindretallsregjering, under forutsetning av at de tre partiene tilsammen blir større enn Frp. Hvor lenge en slik regjering kan leve, er en helt annen sak",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Høyre er blitt tydeligere",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20090911-3262518.txt",
+    "summaries": [
+      {
+        "summary1": "Det er ikke bare i Frp det er nerver. Det er også i Høyre. Sponheim har vært en av de mest populære partilederne i norsk politikk. Men han har også vært en av de mest upopulære. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en av de mest synlige. Det er ikke bare fordi han har vært en av de mest synlige. Han har også vært en",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Tynnslitte nerver",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Tynnslitte nerver",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20091016-3323000.txt",
+    "summaries": [
+      {
+        "summary1": "Meddommeren i serievoldtektssaken er ikke gravende journalistikk, det er begravende journalistikk.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Det notoriske rovdyr | Serievoldtekt. Ikke til å leve med. Et skille. En ønsket utvikling? Et spark. Smitteeffekt. Slått ut. Begravende journalistikk. Sosialarbeider. Respekt som menneske.",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Aftenposten har i denne sak, som i de fleste andre saker, vært en viktig aktør i den kriminaljournalistiske utvikling. Det er en utvikling som er positiv, og som vi alle bør være glade for. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har gitt oss en mer nyansert og mer balansert kriminaljournalistikk. Det er en utvikling som har",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "ap~20091022-3333021.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: Tilbake til hverdagen | Helse. Vandrehall. Vikarstyre. Fem uker i valgseierens glans er over for de rødgrønne. Nytt program og nye statsråder er på plass. Nå kommer det an på resultatene. Statsminister Jens Stoltenberg snakket med Heidi Christine Myrvold Øverland (f.v.), Annika Alexandersen og Juni Høiseth fra Capio Anoreksi Senter i Fredrikstad i Stortingets vandrehall i går. Statsminister Jens Stoltenberg tok støyten selv på Stortingets første arbeidsdag med ommøblert regjering. I gårsdagens muntlige spørretime fikk han et klart forvarsel om at opposisjonen vil følge nøye med på to av de saksfeltene Regjeringen selv har lagt stor vekt på - helse og arbeid. Starten kunne ha vært bedre. Den nye helse- og omsorgsministeren, Anne Grete Strøm-Erichsen, var bortreist, til tross for at hun skulle ha svart på seks spørsmål i den ordinære spørretimen. Arbeidsminister Hanne Bjurstrøm tiltrer først om to måneder. I mellomtiden bestyres departementet av fornyings- og kirkeminister Rigmor Aasrud. Uten tidligere regjeringserfaring har hun fått så mange arbeidsoppgaver at det er vanskelig å se hvordan hun kan rekke over alle på forsvarlig og ansvarlig vis. At Strøm",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Tilbake til hverdagen",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "db~20081117-3745306.txt",
+    "summaries": [
+      {
+        "summary1": "«Football Manager 2009» er et spill som er mer enn et spill, det er en jobb. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye arbeid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye arbeid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye tid, men som også gir mye tilbake. Det er en jobb som krever mye",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "db~20081118-3754590.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter:",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Mer frukt, men mindre norsk",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Mer frukt, men mindre norsk | Forbruket økt med 20 prosent på ti år. Forbruket av frukt og grønt har økt med over 20 prosent i løpet av de siste ti årene. Men den norske produksjonen faller. Hele veksten og mer til av frukt og grønt kommer fra import. Den norske produksjonen har nemlig falt med 10 prosent siden 1998, skriver Nationen. Ifølge landbruks- og matminister Lars Peder Brekk (Sp) må de norske kjedene bli flinkere til å samarbeide med norske produsenter og bøndene må bli flinkere til å produsere det kundene vil ha.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "db~20081118-3758669.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: Dødssyke Hannah får oppfylt sitt siste ønske likevel | Forsikringsselskapet lar henne dra til Disneyland.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "| Hannah Jones (13) har sagt nei til et nytt hjerte. Hun orker ikke en ny operasjon, og vil heller dø hjemme. Hannah ønsker å få tilbringe sine siste dager hjemme sammen med foreldrene og søsknene Oliver (11), Lucy (10) og Phoebe (4). Samtidig har hun en siste drøm: Å få reise til Disneyland i Orlando i USA. Fikk ikke reiseforsikring | 13-åringenes foreldre forsøkte å få henne med på en gruppetur med 40 andre syke eller funksjonshemmede barn, arrangert av veldedige Caudwell Children. Alle barna fikk reiseforsikring. Men ikke Hannah, selv om familien prøvde hos en rekke selskaper. Det så ut til at det aldri skulle bli noe av turen. Men nå har et selskap meldt seg og sagt seg villig til å forsikre 13-åringen, melder Sky News. - Jeg er henrykt og overveldet, sier hun til TV-kanalen. - En uke vekk fra rutinene på sykehuset vil være en fin avkobling for meg og familien min, vi vil være som en vanlig familie en liten stund, sier hun. - Gleder oss | Navnet på selskapet som oppfyller Hannahs drøm er ikke kjent. Hannahs far,",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Hannah Jones (13) har fått oppfylt sin siste drøm. Hun har fått reise til Disneyland i USA. Men hun har også fått oppfylt en annen drøm: Å få reise til Disneyland i Orlando i USA. Hannah Jones (13) har fått oppfylt sin siste drøm. Hun har fått reise til Disneyland i USA. Men hun har også fått oppfylt en annen drøm: Å få reise til Disneyland i Orlando i USA.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "db~20081118-3759012.txt",
+    "summaries": [
+      {
+        "summary1": "Frp-ordfører fikk nytt hjerte | Tønsberg-ordfører Per Arne Olsen (Frp) har gjennomgått en vellykket hjertetransplantasjon ved Rikshospitalet. - Selve operasjonen har vært vellykket, sier ordførerens bror Pål W. Olsen til Tønsbergs Blads nettutgave. Han lever også med et transplantert hjerte. Per Arne Olsen er tidligere hjerteoperert. Under en utredning ved Rikshospitalet tidligere i høst fikk 47-åringen beskjed om at en transplantasjon var eneste utvei, ifølge lokalavisen.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Frp-ordfører fikk nytt hjerte",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "- Jeg er veldig glad for at jeg har fått et nytt hjerte, sier Per Arne Olsen til Tønsbergs Blad. Han er glad for at han nå kan leve et normalt liv.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "db~20081202-3901555.txt",
+    "summaries": [
+      {
+        "summary1": "«Rock Band 2» er et bedre spill enn «Guitar Hero: World Tour», men låtutvalget i sistnevnte er hakket hvassere.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "«Guitar Hero: World Tour» er et godt spill, men det er ikke like bra som «Rock Band 2». Det er litt for mange middelmådige låter, og det er ikke like morsomt å spille med alle instrumentene. «Rock Band 2» er et bedre spill, og har et mer variert låtutvalg. Det er også morsommere å spille med alle instrumentene, og det er lettere å redde en som faller ut av bandet. «Rock Band 2» er et bedre spill, og har et mer variert låtutvalg. Det er også morsommere å spille med alle instrumentene, og det er lettere å redde en som faller ut av bandet.",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "db~20081206-3954583.txt",
+    "summaries": [
+      {
+        "summary1": "Søvnløs Svindal knuste konkurrentene i super-G | - Fant aldri hvilepulsen etter utforseieren. Det var et aldri så lite eventyr da Aksel Lund Svindal kunne krone den lange og målbevisste veien tilbake fra skadene han pådro seg i Beaver Creek med seier i utforløypa «Birds of prey» fredag. Lørdag beviste Svindal at triumfen på langt nær var noe blaff, og gikk like gjerne hen og vant super-G-øvelsen dagen derpå i ren utklassingsstil. Det var imidlertid ingen selvfølge at alpinhelten skulle lykkes i VM-løypa fra 1999, oppladningen til rennet var nemlig alt annet enn ideell. Den vanligvis så sindige NERO-løperen hadde problemer med å komme seg ned på jorda igjen etter utforseieren. - Dette hadde jeg ikke regnet med. Etter seieren på fredag var det veldig vanskelig å få sove. Jeg var høyt oppe og sov ikke i det hele tatt. Jeg følte aldri at jeg fikk hvilepuls i løpet av natten, sier Svindal til Dagbladet.no. - Smart og taktisk | Søvnproblemer til tross - Svindal så på ingen måter preget ut. Romerikingen var utilnærmelig i den nedre delen av løypa og så nærmeste",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Svindal knuste konkurrentene i super-G",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "kk~20110826-59215.txt",
+    "summaries": [
+      {
+        "summary1": "Hitlers kamp i Min kamp | Det sjette bindet av Karl Ove Knausgårds «Min kamp» inneholder en fordypning i Hitlers tekst «Mein Kampf». Det kan bidra til å øke bevisstheten rundt lingvistisk vold, mener dansk litteraturkritiker. Leses av Knausgård: Karl Ove Knausgård gjør en omfattende lesning av Adolf Hitlers «Mein Kampf» i sjette bind av Min kamp. - Det er klart at vi må sette oss ned og lese «Mein Kampf» nå, sier litteraturkritiker i danske Jyllands-Posten Jon Helt Haarder når Klassekampen ringer og forteller at forfatter Karl Ove Knausgård har fordypet seg i Hitlers «Mein Kampf». I den kommende sjette og avsluttende delen av romanverket «Min Kamp», som etter mange forsinkelser endelig skal utkomme i november, er det nemlig varslet at et essay på 400 sider om «Mein Kampf» vil være å lese i boka. Boka er inndelt i tre deler, og hele del 2 av boka vil dreie seg om Adolf Hitlers selvbiografiske ideologiske dokument, bekrefter forlagssjef i Oktober, Geir Berdahl, overfor Klassekampen. Språk og vold | Så langt er det ikke mange",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Hitlers kamp i Min kamp | Det sjette bindet av Karl Ove Knausgårds «Min kamp» inneholder en fordypning i Hitlers tekst «Mein Kampf». Det kan bidra til å øke bevisstheten rundt lingvistisk vold, mener dansk litteraturkritiker. Leses av Knausgård: Karl Ove Knausgård gjør en omfattende lesning av Adolf Hitlers «Mein Kampf» i sjette bind av Min kamp. - Det er klart at vi må sette oss ned og lese «Mein Kampf» nå, sier litteraturkritiker i danske Jyllands-Posten Jon Helt Haarder når Klassekampen ringer og forteller at forfatter Karl Ove Knausgård har fordypet seg i Hitlers «Mein Kampf». I den kommende sjette og avsluttende delen av romanverket «Min Kamp», som etter mange forsinkelser endelig skal utkomme i november, er det nemlig varslet at et essay på 400 sider om «Mein Kampf» vil være å lese i boka. Boka er inndelt i tre deler, og hele del 2 av boka vil dreie seg om Adolf Hitlers selvbiografiske ideologiske dokument, bekrefter forlagssjef i Oktober, Geir Berdahl, overfor Klassekampen. Språk og vold | Så langt er det ikke mange",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "kk~20110827-59218.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter:",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Demonstrasjoner i Chile",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Kliner til for endring | Protesterer: Hundretusenvis i gatene. Generalstreik. Kampen mot Chiles regjerings privatiseringsagenda øker i intensitet. Noe i lufta: Hundretusenvis av chilener demonstrerer mot privatiseringspolitikken til landets regjering. Foto: Ivan Alvarado, Reuters/Scanpix | - Så lenge landets ledelse ikke svarer på våre krav, vil denne bevegelsen fortsette. Det sa Camila Vallejo til Reuters torsdag. Hun er lederen for studentbevegelsen som denne uka har ledet an i massive protester mot Chiles høyrekonservative regjering. Det som for tre måneder siden begynte som isolerte boikotter av undervisningen av studenter som krevde reformer av Chiles utdanningssystem, har utviklet seg til en massebevegelse. Denne uka har hundretusenvis av mennesker deltatt i demonstrasjoner i hovedstaden Santiago og i andre byer over hele landet. Chiles fagforeninger gjennomførte onsdag og torsdag generalstreik. Brei front | Protestene rommer krav om store endringer i regjeringen til Sebastian Piñeras sentraliserte og privatiseringsbaserte måte å styre landet på. Demonstrantene krever mer penger til utdanning, helsesektor og pensjoner og endringer i landets grunnlov. Bevegelsen som drevet fram protestene har sin bakgrunn i studentforeninger,",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220301.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: Tiltalt for voldtekt om bord i cruiseskip | Torsdag møter en mann i retten, tiltalt for å ha voldtatt ei kvinne om bord på cruiseskipet «Queen Elisabeth 2», mens skipet lå ved kai i Ålesund. Rettssak. Både den tiltalte, en mann fra Serbia, og den fornærma, ei kvinne fra Storbritannia, er ansatt om bord på cruiseskipet. Min klient stiller seg fullstendig uforstående til tiltalen. Han benekter å ha hatt noe samkvem med denne kvinna, og erkjenner derfor ikke straffskyld, sier advokat Inger Marie Sperre. Kollegaer | De to skal bare ha arbeidet sammen på «Queen Elisabeth 2» i fire dager da den angivelige voldtekten fant sted 25. mai, mens skipet lå til kai i Ålesund. De var derfor ikke omgangsvenner på skipet. Kvinna har i avhør fortalt at hun hadde lagt seg, da mannen kom inn på lugaren hennes og voldtok henne. Han ble ikke lenge etter pågrepet, og har siden sittet varetektsfengslet, sier statsadvokat Jogeir Nogva, som skal være aktor i rettssaka mot mannen. To tolker | Det er satt av to dager",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Tiltalt for voldtekt om bord i cruiseskip | Torsdag møter en mann i retten, tiltalt for å ha voldtatt ei kvinne om bord på cruiseskipet «Queen Elisabeth 2», mens skipet lå ved kai i Ålesund. Rettssak. Både den tiltalte, en mann fra Serbia, og den fornærma, ei kvinne fra Storbritannia, er ansatt om bord på cruiseskipet. Min klient stiller seg fullstendig uforstående til tiltalen. Han benekter å ha hatt noe samkvem med denne kvinna, og erkjenner derfor ikke straffskyld, sier advokat Inger Marie Sperre. Kollegaer | De to skal bare ha arbeidet sammen på «Queen Elisabeth 2» i fire dager da den angivelige voldtekten fant sted 25. mai, mens skipet lå til kai i Ålesund. De var derfor ikke omgangsvenner på skipet. Kvinna har i avhør fortalt at hun hadde lagt seg, da mannen kom inn på lugaren hennes og voldtok henne. Han ble ikke lenge etter pågrepet, og har siden sittet varetektsfengslet, sier statsadvokat Jogeir Nogva, som skal være aktor i rettssaka mot mannen. To tolker | Det er satt av to dager til rettssaka i Sunnmøre tingrett. På grunn av at tiltalte og fornærmede har",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Tiltalt for voldtekt om bord i cruiseskip | Torsdag møter en mann i retten, tiltalt for å ha voldtatt ei kvinne om bord på cruiseskipet «Queen Elisabeth 2», mens skipet lå ved kai i Ålesund. Rettssak. Både den tiltalte, en mann fra Serbia, og den fornærma, ei kvinne fra Storbritannia, er ansatt om bord på cruiseskipet. Min klient stiller seg fullstendig uforstående til tiltalen. Han benekter å ha hatt noe samkvem med denne kvinna, og erkjenner derfor ikke straffskyld, sier advokat Inger Marie Sperre. Kollegaer | De to skal bare ha arbeidet sammen på «Queen Elisabeth 2» i fire dager da den angivelige voldtekten fant sted 25. mai, mens skipet lå til kai i Ålesund. De var derfor ikke omgangsvenner på skipet. Kvinna har i avhør fortalt at hun hadde lagt seg, da mannen kom inn på lugaren hennes og voldtok henne. Han ble ikke lenge etter pågrepet, og har siden sittet varetektsfengslet, sier statsadvokat Jogeir Nogva, som skal være aktor i rettssaka mot mannen. To tolker | Det er satt av to dager til rettssaka i Sunnmøre tingrett. På grunn av at tiltalte og fornærmede har",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220303.txt",
+    "summaries": [
+      {
+        "summary1": "Aktiv verdiskapningspolitikk for distriktene | Tradisjonelt har det i mange kystsamfunn vært et sterkt initiativ og en evne til å etablere nye bedrifter. Fremveksten til norsk havbruksnæring er et godt eksempel på hvordan privat initiativ har utviklet sterke bedrifter og næringer. I en tid med økende internasjonal konkurranse vil det være behov for at nye ideer blir omdannet til forretningsmessige løsninger. For å skape sterke og robuste kystsamfunn er det viktig at myndighetene fokuserer på å gi rammevilkår som skaper grunnlag for lønnsomme bedrifter. Fremskrittspartiet mener dette best kan gjøres ved at marine og maritime næringer i større grad gis rammevilkår på linje med ordinære næringer og at det skilles mellom nærings- og distriktspolitikk. Dersom næringens rammebetingelser først og fremst har til hensikt å skape en robust og konkurransedyktig næring, så vil dette gi som resultat økonomisk vekst, nye arbeidsplasser og mange livskraftige lokalsamfunn. Dagens distriktspolitikk er feilslått ved at man ikke tar hensyn til at næringer og markedene er i stadig endring.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Aktiv verdiskapningspolitikk for distriktene | Fremskrittspartiet mener at det er viktig å legge til rette for at det skapes nye bedrifter og arbeidsplasser. Det er viktig at det skapes en kultur for entreprenørskap og innovasjon. Det er viktig at det skapes en kultur for entreprenørskap og innovasjon. Fremskrittspartiet vil derfor legge til rette for at det skapes nye bedrifter og arbeidsplasser. Det er viktig at det skapes en kultur for entreprenørskap og innovasjon. Fremskrittspartiet vil derfor legge til rette for at det skapes nye bedrifter og arbeidsplasser.",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220304.txt",
+    "summaries": [
+      {
+        "summary1": "La Tafjordbygda leve | Som innbygger i Tafjord synes jeg det er litt frustrerende å lese om de som for enhver pris vil gå imot all utvikling i Tafjord. Ordfører Arne Sandnes gikk ut i media og talte for helårsvei mellom Tafjord og Grotli. Og da spretter det opp den ene forståsegpåeren etter den andre som sier at Tafjordfjella ikke må røres. Hva med oss som bor i Tafjord? Vi opplever daglig at bygda vår dør mer og mer hen. Den ene familien etter den andre flytter fra bygda. Og hvis dette får fortsette vil Tafjordbygda være fraflyttet innen få år. For noen år siden var det 150 innbyggere her. Pr i dag er det ca 80 som bor i Tafjord, og bare i 2005 vil folketallet i bygda gå ned med 10 prosent. Tunnel | Men fremdeles er det noen som ønsker å bo i Tafjord. Som har etablert seg, og som vil at barna skal vokse opp her. Og hver eneste dag går vi og tenker på hva vi kan gjøre for å snu den trenden vi har i Tafjord. Hva kan vi gjøre for å skape noe i Tafjord som igjen kan føre til at folk flytter til Tafjord i",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "La Tafjordbygda leve!",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Tafjordbygda lever | Som innbygger i Tafjord synes jeg det er litt frustrerende å lese om de som for enhver pris vil gå imot all utvikling i Tafjord. Ordfører Arne Sandnes gikk ut i media og talte for helårsvei mellom Tafjord og Grotli. Og da spretter det opp den ene forståsegpåeren etter den andre som sier at Tafjordfjella ikke må røres. Hva med oss som bor i Tafjord? Vi opplever daglig at bygda vår dør mer og mer hen. Den ene familien etter den andre flytter fra bygda. Og hvis dette får fortsette vil Tafjordbygda være fraflyttet innen få år. For noen år siden var det 150 innbyggere her. Pr i dag er det ca 80 som bor i Tafjord, og bare i 2005 vil folketallet i bygda gå ned med 10 prosent. Tunnel | Men fremdeles er det noen som ønsker å bo i Tafjord. Som har etablert seg, og som vil at barna skal vokse opp her. Og hver eneste dag går vi og tenker på hva vi kan gjøre for å snu den trenden vi har i Tafjord. Hva kan vi gjøre for å skape noe i Tafjord som igjen kan føre",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220308.txt",
+    "summaries": [
+      {
+        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: Gasskraft splitter velgerne | Gass er bokstavelig talt et brennbart tema i den lokale valgkampen. Politikere med stortingsambisjoner kappes om å være mest positive til å bygge gasskraftverk i Møre og Romsdal. Men velgerne er ikke så sikre. En meningsmåling Sentio har utført for Sunnmørsposten viser at det er dødt løp mellom de som vil ha gasskraftverk og de som ikke vil ha det. På spørsmålet om det bør bygges gasskraftverk i Møre og Romsdal nå, eller om vi bør vente på CO2-frie gasskraftverk, og heller satse på andre energikilder, svarte 43,6 prosent at de vil vente, mens 43,3 prosent vil bygge nå. Resten av velgerne har ikke tatt stilling. Gasskraftspørsmålet splitter ikke bare velgerne. Begge de to regjeringsalternativene er delt. Begge leire tar Sentios måling til inntekt, og begge hevder de driver folkeopplysning i gasskraftsaken. - Oi oi oi! Nå ble jeg glad! jubler SVs Bjørn Jacobsen. Han har de siste ukene drevet valgkamp gassfylket Møre og Romsdal på vegne av et parti som sier tvert nei til gasskraftverk uten CO2-håndtering",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Gasskraft splitter velgerne",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Gasskraft splitter velgerne",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220309.txt",
+    "summaries": [
+      {
+        "summary1": "Hva er toleranse? Toleranse er å ha et bestemt sett av meninger og holdninger. De som ikke deler de politisk korrekte meningene er intolerante, og det er toleranseelitens plikt å slå ned på disse. Det synes som om det er det siste synet eierne av toleransebegrepet i SV og Dagbladet synes å ha. Kristin Halvorsen er ikke nådig når hun angriper de intolerante i et intervju i Dagbladet, representert ved blant andre Dagfinn Høybråten, Halvorsen forteller at hun har personlig imot han pga hans holdninger. Hun mener at han som har meninger som er så langt fra hennes gjør Norge «trangere og tristere». Han får folk til å føle seg «mislykket» og «mindreverdige». Han får folk til å «krympe», Han innynder seg hos «sære sekter» (aktive kristne i bedehus, frikirker og statskirken). I tillegg er han «fordømmende» og spiller «kynisk «med fordommer». Det koster å være uenig med Halvorsen. Hennes meningsfelle Øyvind Foss går faktisk enda lenger i sin kamp mot friskoler, særlig de kristne. De står åpenbart for et annet syn en venstresidens. De er derfor «ideologisk reaksjonære», bygger på løgn og",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "SVs toleranse er ikke så stor. Det er ikke rom for andre meninger enn de som er politisk korrekte. Det er ikke rom for andre skoler enn de som er politisk korrekte. Det er ikke rom for andre meninger enn de som er politisk korrekte.",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": null,
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220311.txt",
+    "summaries": [
+      {
+        "summary1": "Karita har ikke støtte av Jens i gass-saken. Det er lett å være tøff i kjeften når man heter Karita Bekkemellem Orheim og skal vinne velgere. Da utsteder man gjerne garantier overfor folk i Møre og Romsdal og ultimatum overfor SV og Sp. Her skulle det bli gasskraftverk med en gang - om nødvendig måtte Ap bryte ut av en sosialistisk regjering og gå sammen med gasskrafttilhengerne Høyre og Frp. Dessverre har hun ikke støtte av sjefen, Jens Stoltenberg. Han vil nemlig ikke love at SV og Sp ikke hindrer nye konsesjoner til gasskraftverk. Så her er enda et viktig område med rød-grønn usikkerhet, både internt i Ap og mellom partiene.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Det er ikke lett å være tøff i kjeften når man heter Karita Bekkemellem Orheim og skal vinne velgere. Da utsteder man gjerne garantier overfor folk i Møre og Romsdal og ultimatum overfor SV og Sp. Her skulle det bli gasskraftverk med en gang - om nødvendig måtte Ap bryte ut av en sosialistisk regjering og gå sammen med gasskrafttilhengerne Høyre og Frp. Dessverre har hun ikke støtte av sjefen, Jens Stoltenberg. Han vil nemlig ikke love at SV og Sp ikke hindrer nye konsesjoner til gasskraftverk. Så her er enda et viktig område med rød-grønn usikkerhet, både internt i Ap og mellom partiene.",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Det er ikke lett å være tøff i kjeften når man heter Karita Bekkemellem Orheim og skal vinne velgere. Da utsteder man gjerne garantier overfor folk i Møre og Romsdal og ultimatum overfor SV og Sp. Her skulle det bli gasskraftverk med en gang - om nødvendig måtte Ap bryte ut av en sosialistisk regjering og gå sammen med gasskrafttilhengerne Høyre og Frp. Dessverre har hun ikke støtte av sjefen, Jens Stoltenberg. Han vil nemlig ikke love at SV og Sp ikke hindrer nye konsesjoner til gasskraftverk. Så her er enda et viktig område med rød-grønn usikkerhet, både internt i Ap og mellom partiene.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "spbm~20050822-508220313.txt",
+    "summaries": [
+      {
+        "summary1": "Kunnskapsløft eller grønnsaker? Svar til Bekkemellem Orheim | Karita Bekkemellem Orheims innlegg i Sunnmørsposten 19. august bekrefter nok en gang at Arbeiderpartiet ikke har noen politikk for de sentrale utfordringene i norsk skole. Ap er for mer mat i skolen, bedre skolebygg og utvidet skoledag. Alt dette er det bred enighet om, selv om sosialistene lover mer gratis mat enn regjeringen gjør. Men det er ikke det viktigste nå. Hovedutfordringen for skolen er å sørge for at alle elever, uansett bakgrunn, lærer å lese, skrive og regne skikkelig og tilegner seg de grunnlegende ferdighetene de trenger for å mestre livet. Det dreier seg altså om kunnskap og kompetanse, ikke kalorier. Alle vet nå at sosialistene vil fjerne friskoleloven. Den berører cirka to prosent av elevene. Men fortsatt er det ingen som vet hva sosialistene vil gjøre med den offentlige skolen, der 98 prosent av elevene går. Regjeringens skolereform Kunnskapsløftet skal gjennomføres fra 2006. Hva skjer med Kunnskapsløftet dersom Ap, SV og Sp vinner valget? Ap og SV har blant annet varslet at de vil utsette hele Kunnskapsløftet, endre læreplanene, fjerne kravene til studiekompetanse og fjerne opptakskravene til",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Kunnskapsløft eller grønnsaker?",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Det er ikke bare i Norge at Arbeiderpartiet har en skolepolitikk som er helt på jordet. I Sverige har de rød-grønne partiene styrt i 10 år. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-grønne partiene innført en hel rekke tiltak som har ført til at de har fått en skole som er mye bedre enn den var. I Sverige har de rød-",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "vg~VG-20121202-10056280.txt",
+    "summaries": [
+      {
+        "summary1": "Napoleon Bonaparte skrev et brev til utenriksminister Hugues-Bernard Maret, der han forteller om sine planer om å sprenge Kreml. Brevet ble solgt for nærmere 1,4 millioner kroner på en auksjon i Frankrike.",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": "Brev fra Napoleon gikk for millionsum på auksjon",
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Brev fra Napoleon gikk for millionsum på auksjon | Et 200 år gammelt brev fra Napoleon Bonaparte ble solgt for nærmere 1,4 millioner kroner på en auksjon. I brevet forteller den franske lederen om sine planer om å sprenge Kreml. «Jeg vil sprenge Kreml i lufta den 22. klokka tre om morgenen», står det i brevet, som er skrevet i tallkode og signert «Nap». Brevet er datert 20. oktober 1812, dagen etter at Napoleon trakk seg tilbake fra sentrum av Moskva. Det er adressert til utenriksminister Hugues-Bernard Maret. Napoleon gjennomførte planen om sprenge Kreml, og flere tårn og vegger ble lagt i ruiner i eksplosjonen. De er senere blitt gjenoppbygget. Foran søndagens auksjon i Fountanbleau sørøst for Paris var det ventet at brevet ville bli solgt for mellom 10.000 og 15.000 euro. Sluttprisen ble imidlertid hele 187.500 euro, tilsvarende nærmere 1,4 millioner kroner.",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  },
+  {
+    "id": "vg~VG-20121211-10071599.txt",
+    "summaries": [
+      {
+        "summary1": "Malis statsminister Cheick Modibo Diarra har gått av etter å ha blitt pågrepet soldater som var sendt av den tidligere kupplederen Amadou Sanogo. I en kort tale på Malis statlige fjernsyn sa Diarra tirsdag at han går av med hele sin regjering. Sikkerhetsrådet fordømmer pågripelsen av Diarra og advarer om at hæren i landet er i ferd med å undergrave de internasjonale forsøkene på å slå ned det islamistiske opprøret nord i landet. Sikkerhetsrådet varsler også om at det kan bli aktuelt å innføre sanksjoner mot Mali. Ifølge en av Diarras livvakter var det rundt 20 soldater som mandag kom fra en militærleir utenfor hovedstaden Bamako, som er hovedkvarteret til Sanogo og de tidligere kuppmakerne. Livvakter forteller at soldatene slo inn døra for å ta seg inn i Diarras hjem, og at de hadde behandlet ham ganske røft. Ifølge en talsmann for de militære ble Diarra arrestert fordi han prøvde å reise fra landet. Diarra skulle mandag reist til Frankrike for en legeundersøkelse, men han avlyste reisen da han fikk vite at bagasjen hans var tatt av flyet han skulle reist med. Diarra har mange ganger gjort det klart at han ønsker en rask militæraksjon for å drive islamistene",
+        "model": "LumiOpen/Viking-13B",
+        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
+      },
+      {
+        "summary2": null,
+        "model": "norallm/normistral-7b-warm",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      },
+      {
+        "summary3": "Malis statsminister Cheick Modibo Diarra har gått av etter å ha blitt pågrepet av soldater som var sendt av den tidligere kupplederen Amadou Sanogo. I en kort tale på Malis statlige fjernsyn sa Diarra tirsdag at han går av med hele sin regjering. Sikkerhetsrådet fordømmer pågripelsen av Diarra og advarer om at hæren i landet er i ferd med å undergrave de internasjonale forsøkene på å slå ned det islamistiske opprøret nord i landet. Sikkerhetsrådet varsler også om at det kan bli aktuelt å innføre sanksjoner mot Mali. Ifølge en av Diarras livvakter var det rundt 20 soldater som mandag kom fra en militærleir utenfor hovedstaden Bamako, som er hovedkvarteret til Sanogo og de tidligere kuppmakerne. Livvakter forteller at soldatene slo inn døra for å ta seg inn i Diarras hjem, og at de hadde behandlet ham ganske røft. Ifølge en talsmann for de militære ble Diarra arrestert fordi han prøvde å reise fra landet. Diarra skulle mandag reist til Frankrike for en legeundersøkelse, men han avlyste reisen da han fikk vite at bagasjen hans var tatt av flyet han skulle reist med. Diarra har mange ganger gjort det klart at han ønsker en rask milit",
+        "model": "norallm/norbloom-7b-scratch",
+        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
+      }
+    ]
+  }
+]
