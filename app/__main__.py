@@ -1,6 +1,6 @@
 import json
 import secrets
-from random import randint, shuffle
+from random import randint, shuffle, sample
 
 from db_funcs import create_database, fetch_summaries_json, get_credentials, summary_db
 from flask import Flask, redirect, render_template, request, session, url_for
@@ -8,16 +8,15 @@ from flask import Flask, redirect, render_template, request, session, url_for
 DATABASE = "./database.db"
 
 with open("./Data/NorSumm_dev.json", "r") as f:
-    data_written = json.load(f)
+    DATA_WRITTEN = json.load(f)
 
 with open("./Data/generated_summs.json", "r") as f:
-    data_generated = json.load(f)
+    DATA_GENERATED = json.load(f)
 
-# TODO: Shuffle data for each session
-data_written = data_written[:]
-data_generated = data_generated[:]
+DATA_WRITTEN = DATA_WRITTEN[:]
+DATA_GENERATED = DATA_GENERATED[:]
 
-N_ARTICLES = len(data_written)
+N_ARTICLES = len(DATA_WRITTEN)
 
 app = Flask(__name__)
 
@@ -75,7 +74,7 @@ def index():
 
 @app.route("/start", methods=["POST"])
 def start_session():
-    print("Starting user session")
+    session["article_order"] = sample(range(len(DATA_WRITTEN)), len(DATA_WRITTEN))
     session["current_article"] = 0
     return redirect(url_for("select_age"))
 
@@ -95,7 +94,8 @@ def summary_picker():
     if session["current_article"] == N_ARTICLES:
         return render_template("no_more_summaries.html")
 
-    article = extract_data(session["current_article"], data_written, data_generated)
+    article_idx = session["article_order"][session["current_article"]]
+    article = extract_data(article_idx, DATA_WRITTEN, DATA_GENERATED)
     summaries = [
         {
             "id": article["summary_written_id"],
