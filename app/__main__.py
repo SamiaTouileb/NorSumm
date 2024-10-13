@@ -36,18 +36,24 @@ def extract_data(idx, article_set_written, article_set_generated: list, form="nb
     generated_idx = find_article(article_set_generated, written["id"])
 
     summary_written_idx = randint(1, 3)
-    summary_generated_idx = randint(1, 3)
     summary_written = article_set_written[idx][f"summaries_{form}"][
         summary_written_idx - 1
     ][f"summary{summary_written_idx}"]
+
+    g_summaries = list(enumerate(article_set_generated[generated_idx]["summaries"]))
+    shuffle(g_summaries)
+    summary_generated_index = next(
+        i for i, summary in g_summaries if summary[f"summary{i+1}"] is not None
+    )
+
     summary_generated = article_set_generated[generated_idx]["summaries"][
-        summary_generated_idx - 1
-    ][f"summary{summary_generated_idx}"]
+        summary_generated_index
+    ][f"summary{summary_generated_index+1}"]
     model_generated = article_set_generated[generated_idx]["summaries"][
-        summary_generated_idx - 1
+        summary_generated_index
     ]["model"]
     prompt_generated = article_set_generated[generated_idx]["summaries"][
-        summary_generated_idx - 1
+        summary_generated_index
     ]["prompt"]
 
     return {
@@ -55,7 +61,7 @@ def extract_data(idx, article_set_written, article_set_generated: list, form="nb
         "article": written["article"],
         "summary_written_id": f"summary{summary_written_idx}",
         "summary_written": summary_written,
-        "summary_generated_id": f"summary{summary_generated_idx}",
+        "summary_generated_id": f"summary{summary_generated_index+1}",
         "summary_generated": summary_generated,
         "summary_generated_model": model_generated,
         "summary_generated_prompt": prompt_generated,
