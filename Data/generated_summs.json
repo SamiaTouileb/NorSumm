@@ -28,12 +28,12 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Museumsparadokser",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
       {
-        "summary3": "Museumsparadokser",
+        "summary3": null,
         "model": "norallm/norbloom-7b-scratch",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       }
@@ -68,12 +68,12 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Svak tenkning",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
       {
-        "summary3": "Svak tenkning",
+        "summary3": null,
         "model": "norallm/norbloom-7b-scratch",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       }
@@ -113,27 +113,7 @@
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
       {
-        "summary3": "NATO har fått to nye medlemsland",
-        "model": "norallm/norbloom-7b-scratch",
-        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
-      }
-    ]
-  },
-  {
-    "id": "ap~20090803-3199497.txt",
-    "summaries": [
-      {
-        "summary1": "Den unevnelige plan B | Uansvarlig. Regjeringspartnerne. Revehi. Regjeringsspill.",
-        "model": "LumiOpen/Viking-13B",
-        "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
-      },
-      {
-        "summary2": null,
-        "model": "norallm/normistral-7b-warm",
-        "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
-      },
-      {
-        "summary3": "Den unevnelige plan B",
+        "summary3": null,
         "model": "norallm/norbloom-7b-scratch",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       }
@@ -148,7 +128,7 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Her går de to journalistene om bord i Clintons fly",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -208,12 +188,12 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Tynnslitte nerver",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
       {
-        "summary3": "Tynnslitte nerver",
+        "summary3": null,
         "model": "norallm/norbloom-7b-scratch",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       }
@@ -253,7 +233,7 @@
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
       {
-        "summary3": "Tilbake til hverdagen",
+        "summary3": null,
         "model": "norallm/norbloom-7b-scratch",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       }
@@ -283,12 +263,12 @@
     "id": "db~20081118-3754590.txt",
     "summaries": [
       {
-        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter:",
+        "summary1": null,
         "model": "LumiOpen/Viking-13B",
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Mer frukt, men mindre norsk",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -303,7 +283,7 @@
     "id": "db~20081118-3758669.txt",
     "summaries": [
       {
-        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: Dødssyke Hannah får oppfylt sitt siste ønske likevel | Forsikringsselskapet lar henne dra til Disneyland.",
+        "summary1": null,
         "model": "LumiOpen/Viking-13B",
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
@@ -328,7 +308,7 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Frp-ordfører fikk nytt hjerte",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -368,7 +348,7 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Svindal knuste konkurrentene i super-G",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -403,12 +383,12 @@
     "id": "kk~20110827-59218.txt",
     "summaries": [
       {
-        "summary1": "Skriv en oppsummering av følgende artikkel med kun noen få punkter:",
+        "summary1": null,
         "model": "LumiOpen/Viking-13B",
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Demonstrasjoner i Chile",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -468,7 +448,7 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "La Tafjordbygda leve!",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -488,12 +468,12 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Gasskraft splitter velgerne",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
       {
-        "summary3": "Gasskraft splitter velgerne",
+        "summary3": null,
         "model": "norallm/norbloom-7b-scratch",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       }
@@ -548,7 +528,7 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Kunnskapsløft eller grønnsaker?",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
@@ -568,7 +548,7 @@
         "prompt": "Skriv en oppsummering av følgende artikkel med kun noen få punkter: {{article}}\nOppsummering:"
       },
       {
-        "summary2": "Brev fra Napoleon gikk for millionsum på auksjon",
+        "summary2": null,
         "model": "norallm/normistral-7b-warm",
         "prompt": "Oppsummer følgende artikkel med noen få setninger: {{article}}\nOppsummering:"
       },
