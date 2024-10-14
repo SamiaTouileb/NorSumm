@@ -95,7 +95,17 @@ def summary_picker():
         return render_template("no_more_summaries.html")
 
     article_idx = session["article_order"][session["current_article"]]
-    article = extract_data(article_idx, DATA_WRITTEN, DATA_GENERATED)
+
+    while True:
+        try:
+            article = extract_data(article_idx, DATA_WRITTEN, DATA_GENERATED)
+            break
+        except LookupError:
+            session["current_article"] += 1
+            if session["current_article"] == N_ARTICLES:
+                return render_template("no_more_summaries.html")
+            article_idx = session["article_order"][session["current_article"]]
+
     summaries = [
         {
             "id": article["summary_written_id"],
