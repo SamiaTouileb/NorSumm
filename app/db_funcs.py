@@ -1,5 +1,6 @@
-import collections.abc
 import sqlite3
+
+from utils import _update
 
 
 def create_database(database):
@@ -71,15 +72,6 @@ def get_credentials(database, username):
         creds = c.fetchone()
 
     return creds
-
-
-def _update(d, u):
-    for k, v in u.items():
-        if isinstance(v, collections.abc.Mapping):
-            d[k] = _update(d.get(k, {}), v)
-        else:
-            d[k] = v
-    return d
 
 
 def fetch_summaries_json(database):
