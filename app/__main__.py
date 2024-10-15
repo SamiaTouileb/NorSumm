@@ -1,9 +1,10 @@
 import json
 import secrets
-from random import randint, shuffle, sample
+from random import randint, sample, shuffle
 
 from db_funcs import create_database, fetch_summaries_json, get_credentials, summary_db
 from flask import Flask, redirect, render_template, request, session, url_for
+from utils import combine_all_summaries
 
 DATABASE = "./database.db"
 
@@ -178,7 +179,11 @@ def admin_panel():
     if not session.get("admin_usr"):
         return redirect(url_for("admin_login"))
     else:
-        return fetch_summaries_json(DATABASE)
+        result_json = fetch_summaries_json(DATABASE)
+        result_json = combine_all_summaries(
+            result_json, "Data/NorSumm_dev.json", "Data/generated_summs.json"
+        )
+        return result_json
 
 
 if __name__ == "__main__":
