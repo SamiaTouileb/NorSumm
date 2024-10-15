@@ -24,7 +24,7 @@ def create_database(database):
             summary_id TEXT NOT NULL,
             model TEXT,
             prompt TEXT,
-            preference_count INT,
+            preference_count INT DEFAULT 0,
             PRIMARY KEY (article_id, summary_type, summary_id)
             );"""
         )
@@ -32,12 +32,12 @@ def create_database(database):
             """
             CREATE TABLE IF NOT EXISTS age_groups
             (
-            "18-24" INT,
-            "25-34" INT,
-            "35-44" INT,
-            "45-54" INT,
-            "55-64" INT,
-            "65+" INT,
+            "18-24" INT DEFAULT 0,
+            "25-34" INT DEFAULT 0,
+            "35-44" INT DEFAULT 0,
+            "45-54" INT DEFAULT 0,
+            "55-64" INT DEFAULT 0,
+            "65+" INT DEFAULT 0,
             article_id TEXT NOT NULL REFERENCES summaries(article_id),
             summary_type TEXT NOT NULL REFERENCES summaries(summary_type),
             summary_id TEXT NOT NULL REFERENCES summaries(summary_id),
@@ -152,8 +152,8 @@ def summary_db(database, article_id, preference_type, summary, age_group):
                     article_id,
                     preference_type,
                     summary["id"],
-                    summary["model"],
-                    summary["prompt"],
+                    summary["model"] if summary["model"] != "None" else None,
+                    summary["prompt"] if summary["prompt"] != "None" else None,
                     1,
                 ),
             )
